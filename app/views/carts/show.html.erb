@@ -17,9 +17,9 @@
       <tbody>
         <% if (enhanced_cart.length == 0) %>
           <div class="alert alert-info" role="alert">
-          <h3>Your cart is empty!</h3>
-          <%= link_to 'Home', :root %>
-        </div>
+            <h3>Your cart is empty!</h3>
+            <%= link_to 'Home', :root %>
+          </div>
         <% end %>
         <% enhanced_cart.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
